@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComparadorPrecios</name>
+    </assembly>
+    <members>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.GetTienda">
+            <summary>
+            Obtiene lista de Tiendas en formato resumido (Id y Nombre)
+            </summary>
+        </member>
+    </members>
+</doc>

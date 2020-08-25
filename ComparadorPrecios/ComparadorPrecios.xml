@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComparadorPrecios</name>
+    </assembly>
+    <members>
+        <member name="T:ComparadorPrecios.Controllers.ArticulosController">
+            <summary>
+            Controlador de Artículos.
+            Contiene los endpoints de la API REST de Artículos.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.GetArticulos(System.String)">
+            <summary>
+            Devuelve lista de Artículos que contengan la cadena buscada en la descripción y en el código de barras
+            </summary>
+            <remarks>Devuelve una lista de todos los Artículos en formato resumido (solo id, descripción y código EAN).</remarks>
+            <param name="buscar">Cadena buscada</param>
+            <returns>Devuelve lista de Artículos que contengan la cadena buscada en la descripción y en el código de barras</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.GetArticulo(System.Int32)">
+            <summary>
+            Devuelve un Artículo dado un Id
+            </summary>
+            <param name="id">Id del artículo</param>
+            <returns>Devuelve el artículo que corresponde al Id dado.</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.GetArticuloEan(System.String)">
+            <summary>
+            Devuelve un Artículo dado un EAN o código de barras
+            </summary>
+            <param name="ean">Código de barrasa</param>
+            <returns>Devuelve el Artículo con el código de barras o EAN dado</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.PutArticulo(System.Int32,ComparadorPrecios.Modelos.Articulo)">
+            <summary>
+            Modifica un Artículo dado un Id
+            </summary>
+            <param name="id">Id del artículo a modificar</param>
+            <param name="articulo">Artículo modificado</param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.PostArticulo(ComparadorPrecios.Modelos.Articulo)">
+            <summary>
+            Crea un Artículo
+            </summary>
+            <param name="articulo">El Artículo</param>
+            <returns>Devuelve el Artículo creado</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.ArticulosController.DeleteArticulo(System.Int32)">
+            <summary>
+            Borra un Artículo dado un Id
+            </summary>
+            <param name="id">Id del artículo a borrar</param>
+            <returns>Devuelve el artículo borrado</returns>
+        </member>
+        <member name="T:ComparadorPrecios.Controllers.PreciosController">
+            <summary>
+            Controlador de Precios.
+            Contiene los endpoints de la API REST de Precios.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.PreciosController.GetPrecio">
+            <summary>
+            Devuelve lista con todos los precios
+            </summary>
+            <returns>Devuelve lista con todos los precios</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.PreciosController.GetPrecio(System.Int32)">
+            <summary>
+            Devuelve un precio dado un Id
+            </summary>
+            <param name="id">Id del precio</param>
+            <returns>Devuelve un precio dado un Id</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.PreciosController.PutPrecio(System.Int32,ComparadorPrecios.Modelos.Precio)">
+            <summary>
+            Modifica el Precio dado un Id
+            </summary>
+            <param name="id">Id del precio a modificar</param>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.PreciosController.PostPrecio(ComparadorPrecios.Modelos.Precio)">
+            <summary>
+            Crea un Precio
+            </summary>
+            <param name="precio">Precio a crear</param>
+            <returns>Devuelve el Precio creado</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.PreciosController.DeletePrecio(System.Int32)">
+            <summary>
+            Borra un precio dado un Id
+            </summary>
+            <param name="id">Id del Precio a borrar</param>
+            <returns>Devuelve el Precio borrado</returns>
+        </member>
+        <member name="T:ComparadorPrecios.Controllers.TiendasController">
+            <summary>
+            Controlador de Tiendas.
+            Contiene los endpoints de la API REST de Tiendas.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.GetTienda(System.String)">
+            <summary>
+            Devuelve lista de Tiendas en formato resumido (Id y Nombre) que contiene una cadena buscada.
+            </summary>
+            <param name="buscar">Cadena buscada en los nombre de tienda</param>
+            <returns>Devuelve listado de tiendas que contiene una cadena buscada.</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.GetTienda(System.Int32)">
+            <summary>
+            Devuelve datos de la Tienda con Id
+            </summary>
+            <remarks>Devuelve una Tienda dado un Id</remarks>
+            <param name="id">Id de la tienda</param>
+            <returns>Devuelve tienda con Id</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.PutTienda(System.Int32,ComparadorPrecios.Modelos.Tienda)">
+            <summary>
+            Modifica Tienda dado un Id
+            </summary>
+            <param name="id">Id de la tienda</param>
+            <param name="tienda">Objeto tienda modificada</param>
+            <returns></returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.PostTienda(ComparadorPrecios.Modelos.Tienda)">
+            <summary>
+            Crea una Tienda y devuelve la Tienda creada
+            </summary>
+            <param name="tienda">Objeto tienda que se va a crear</param>
+            <returns>Devuelve la tienda creada</returns>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.TiendasController.DeleteTienda(System.Int32)">
+            <summary>
+            Borra una tienda dado un Id
+            </summary>
+            <param name="id">Id de la tienda</param>
+            <returns>Devuelve la tienda borrada</returns>
+        </member>
+        <member name="T:ComparadorPrecios.Controllers.VersionController">
+            <summary>
+            Controlador de Versión.
+            Contiene el endpoint que devuelve la versión de la web API.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="M:ComparadorPrecios.Controllers.VersionController.GetVersion">
+            <summary>
+            Devuelve la versión de la Web API ComparadorPrecios.
+            </summary>
+            <returns>Devuelve la versión de la Web API ComparadorPrecios.</returns>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.Articulo">
+            <summary>
+            Contiene la clase Artículo.
+            Esta clase contiene los datos de los Artículos y se utiliza para crear los objetos enviados y devueltos por la web API.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.ArticuloResumen">
+            <summary>
+            Contiene la clase ArtículoResumen.
+            Esta clase contiene los datos resumidos de los Artículos y se utiliza para devolver la lista de artículos buscados.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.BdContext">
+            <summary>
+            Contiene el contexto para acceso a la base de datos y las tablas.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.Precio">
+            <summary>
+            Contiene la clase Precio.
+            Esta clase contiene los datos de los precios y se utiliza para crear los objetos enviados y devueltos por la web API.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.Tienda">
+            <summary>
+            Contiene la clase Tienda.
+            Esta clase contiene los datos de las Tiendas y se utiliza para crear los objetos enviados y devueltos por la web API.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+        <member name="T:ComparadorPrecios.Modelos.TiendaResumen">
+            <summary>
+            Contiene la clase TiendaResumen.
+            Esta clase contiene los datos resumidos de las Tiendas y se utiliza para devolver la lista de tiendas buscadas.
+            
+            Creado por: Santiago Barquero - 2º DAM
+            Fecha: Junio-2020
+            </summary>
+        </member>
+    </members>
+</doc>
