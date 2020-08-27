@@ -1,6 +1,6 @@
 # ComparadorPrecios_WebAPI
 
-Proyecto **Visual Studio 2019** que implementa el **servicio API RESTful** de mi **Proyecto de Ciclo 2º DAM**.
+Aplicación en **Visual Studio 2019** que implementa el **servicio API RESTful** de mi **Proyecto de Ciclo 2º DAM**.
 
 ## Introducción
 
@@ -13,13 +13,13 @@ El proyecto desarrollado pretende ser sobre todo una prueba de concepto de un si
 ## Características
 
 - El proyecto está desarrollado para la plataforma **.NET Core 3.1** utilizando **C#**. 
-- Se emplean lo siguiente:
+- Se emplea lo siguiente:
 
     - **Entity Framework** (ORM)
     - **LINQ** (Language Integrated Query)
     - **Swagger** (Documentación API REST)
 
-- Utilizo como **PostgreSQL** como gestor de base de datos. Para acceder empleo el paquete *NuGet*
+- Utilizo **PostgreSQL** como gestor de base de datos y para acceder empleo el paquete *NuGet*
 
     - **Npgsql.EntityFrameworkCore.PostgreSQL**.
 
@@ -29,8 +29,8 @@ El proyecto desarrollado pretende ser sobre todo una prueba de concepto de un si
 
 ## Puesta en marcha
 
-- Abrir la solución **ComparadorPrecios.sln** con Visual Studio 2019 y una vez abierta
-- Lanzar la aplicación, por ejemplo, con 'IIS Express'
+- Abrir la solución **ComparadorPrecios.sln** con **Visual Studio 2019** y una vez abierta
+- Lanzar la aplicación, por ejemplo, con '**IIS Express**'
 
 ![Lanzamiento de la aplicación](images/lanzar_app.png)
 
@@ -38,7 +38,7 @@ El proyecto desarrollado pretende ser sobre todo una prueba de concepto de un si
 
 ## Documentación de la API
 
-Para acceder a la documentación que genera Swagger de la API ponemos en un navegador la siguiente dirección:
+Para acceder a la documentación que genera **Swagger** de la API ponemos en un navegador la siguiente dirección:
 
 - **[http://localhost:50145/swagger](http://localhost:50145/swagger)**
 
@@ -46,7 +46,7 @@ Para acceder a la documentación que genera Swagger de la API ponemos en un nave
 
 ## Peticiones a la API
 
-Para hacer peticiones a la API podemos utilizar cualquier aplicación que pueda hacer peticiones HTTP. En el proyecto desarrollado tenemos dos aplicaciones de ejemplo, una para escritorio desarrolladas en Java y otra para dispositivos Android desarrollada también en Java.
+Para hacer peticiones a la API podemos utilizar cualquier cliente que pueda hacer peticiones HTTP. En el proyecto desarrollado tenemos dos aplicaciones de ejemplo, una para **escritorio** desarrolladas en **Java** y otra para dispositivos **Android** desarrollada también en **Java**.
 
 Podemos utilizar un programa como **Postman** para hacer peticiones y comprobar los resultados.
 Adjunto un ejemplo en el que hago una petición `GET` de la tienda con `ID=1`.
@@ -72,6 +72,6 @@ Adjunto un ejemplo en el que hago una petición `GET` de la tienda con `ID=1`.
 
 ![Conversión de imagen binaria a Base 64](images/conversion_imagen_base64.png)
 
-##Diagrama de base de datos
+## Diagrama de base de datos
 
 ![Diagrama de base de datos](images/diagrama_base_datos.png)
